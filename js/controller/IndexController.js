@@ -6,11 +6,11 @@ function listarCasas() {
 
         const element = casasCadastradas[i];
 
-        document.getElementById("produtos").innerHTML +=
+        document.getElementById("casas").innerHTML +=
             /*html*/`
-            <div class="card-produto">
-                <img src=${element.img} alt="Sofá">
-                <div class="card-produto-descricao">
+            <div class="card-casa">
+                <img src=${element.img} alt=${element.nome}>
+                <div class="card-casa-descricao">
                     <h2>${element.nome}</h2>
                     <p>${element.descricao}</p>
                     <p>${element.preco}</p>
