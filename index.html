@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Casa Container</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casa Container</title>
+    <link rel="stylesheet" href="css/reset.css" class="stylesheet">
+    <link rel="stylesheet" href="css/style.css" class="stylesheet">
+    <script src="js/service/CasaService.js"></script>
+    <script src="js/controller/IndexController.js"></script>
 </head>
-<body>
-  
+
+<body onload="listarCasas()">
+    <header>
+        <nav class="navbar">
+            <div>
+                <img src="img/menu.svg" alt="ícone de menu">
+                <h1>Casa Container</h1>
+            </div>
+            <img src="img/search.svg" alt="ícone de busca">
+        </nav>
+    </header>
+
+    <section id="casas"></section>
 </body>
+
 </html>
