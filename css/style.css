@@ -1,13 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap');
 
+body, p, span, a {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button:hover {
+  background-color: #5c5c5c;
+    color: #fff;
+  }
+
+/* HEADER*/
 .menu { 
   background-color:  #fff;
   color: #5C5C5C;
   display: flex;
-  padding: 8px 16px;
   justify-content: space-between;
-}
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: 0px 1px #f6f6f6;
+  position: fixed;
+  top: 0;
+  }
 
 .menu img {
   height: 18px;
@@ -18,9 +36,134 @@
   flex-direction: row;
   justify-content: space-between;
   font-weight: 400;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .logo p {
   padding: 0px 16px;
 }
+
+/* HERO*/
+
+.hero {
+  background-image: url("https://static.wixstatic.com/media/f49bfc_6eec037d05a74ba4b7217d69a882d6df~mv2_d_2482_1408_s_2.jpg/v1/fill/w_1600,h_907,al_c,q_90/file.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 280px;
+  margin-top: 32px;
+}
+
+/* HERO CTA*/
+ .hero_cta {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+ }
+
+ .hero_cta  h1 {
+  margin-top: 10px;
+  color: #5c5c5c;
+  text-align: center;
+  font-weight: 300;
+  line-height: 110%;
+  font-size: 1.5rem;
+}
+
+.hero_cta span {
+  margin: 8px 10px;
+  line-height: 120%;
+  color: #5c5c5c;
+  text-align: center;
+  font-weight: 300;
+  line-height: 110%;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.hero_cta button {
+  color: #5C5C5C;
+  font-weight: 500;
+  border: 1px solid #bababa;
+  padding: 8px 16px;
+  background: #fff;
+  width: 220px;
+  margin: 20px auto;
+}
+
+/* CASAS*/
+
+.casas {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.casas h2 {
+  color: #5c5c5c;
+  text-align: center;
+  font-weight: 300;
+  line-height: 110%;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+.casas_row {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.card_casa {
+  border: 1px solid #bababa;
+}
+
+.card_container {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+width: 300px;
+margin: 20px 10px;
+}
+
+
+.card_casa img {
+  height: 200px;
+  width: 300px;
+}
+
+.card_casa p {
+  font-family: 'Lato', sans-serif;
+  color: #5C5C5C;
+  font-weight: 500;
+  margin: 16px 10px 8px 10px;
+}
+
+.card_casa span {
+  font-family: 'Lato', sans-serif;
+  color: #5C5C5C;
+  font-weight: 300;
+  margin: 0px 10px 16px 10px;
+}
+
+.card_casa button {
+  font-family: 'Lato', sans-serif;
+  color: #5C5C5C;
+  font-weight: 500;
+  margin: 0px 10px 16px 10px;
+  border: 1px solid #bababa;
+  padding: 4px 8px;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+

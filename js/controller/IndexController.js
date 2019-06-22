@@ -16,8 +16,6 @@ function listarCasas() {
                     <p>${element.preco}</p>
                 </div>
             </div>
-            
-            `
     }
 
 }
