@@ -20,14 +20,3 @@ button, input {
   outline: none;
 }
 
-button {
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #5c5c5c;
-    color: #fff;
-  }
-
-
-
