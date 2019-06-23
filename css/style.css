@@ -9,10 +9,6 @@ h1, h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-button:hover {
-  background-color: #5c5c5c;
-    color: #fff;
-  }
 
 /* HEADER*/
 .menu { 
@@ -93,6 +89,11 @@ button:hover {
   margin: 20px auto;
 }
 
+.hero_cta button:hover {
+  background-color: #5c5c5c;
+    color: #fff;
+  }
+
 /* CASAS*/
 
 .casas {
@@ -159,6 +160,11 @@ margin: 20px 10px;
   padding: 4px 8px;
   background: #fff;
 }
+
+.card_casa button:hover {
+  background-color: #5c5c5c;
+    color: #fff;
+  }
 
 .row {
   display: flex;
