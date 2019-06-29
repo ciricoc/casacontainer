@@ -6,16 +6,19 @@ function listarCasas() {
 
         const element = casasCadastradas[i];
 
-        document.getElementById("casas").innerHTML +=
-            /*html*/`
-            <div class="card-casa">
+        document.getElementById("catalogo").innerHTML +=
+            /*html*/
+            
+            `
+            <div class="card_container card_casa">
                 <img src=${element.img} alt=${element.nome}>
-                <div class="card-casa-descricao">
-                    <h2>${element.nome}</h2>
-                    <p>${element.descricao}</p>
-                    <p>${element.preco}</p>
+                <p>${element.nome}</p>
+                <div class="row">
+                    <span>${element.preco}</span>
+                    <button type="button">ver mais</button>
                 </div>
             </div>
+            `
     }
 
 }
