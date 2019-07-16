@@ -16,7 +16,7 @@
     <header>
         <nav class="menu">
             <div class="logo">
-                <img src="img/menu.svg" alt="ícone de menu">
+                <img src="img/menu.svg" alt="ícone de menu" onclick="openDrawer()">
                 <p>Casa Container</p>
             </div>
             <img src="img/search.svg" alt="ícone de busca">
@@ -36,18 +36,44 @@
     <section id="catalogo">
         <div class="casas">
             <h2>Catálogo</h2>
-            
+
             <div class="casas_row">
             </div>
 
         </div>
     </section>
-    
+
     <section>
         <div class="footer">
             <p>Casa Container 2019 - Todos os direitos reservados</p>
         </div>
     </section>
+
+    <div class="drawer">
+        <div class="drawer-menu">
+            <div class="drawer-title">Casa Container</div>
+            <div class="menu-itens">
+                <div class="menu-item">
+                    <a href="index.html">
+                        <div>
+                            <img src="img/home.svg" alt="ícone para home">
+                            Home
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="carrinho.html">
+                        <div>
+                            <img src="img/cart.svg" alt="ícone para home">
+                            Carrinho
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="drawer-close" onclick="closeDrawer()"></div>
+    </div>
 </body>
 
 </html>
