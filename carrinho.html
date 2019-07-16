@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casa Container - Carrinho</title>
+    <link rel="stylesheet" href="css/reset.css" class="stylesheet">
+    <link rel="stylesheet" href="css/style.css" class="stylesheet">
+    <script src="js/service/CasaService.js"></script>
+    <script src="js/controller/IndexController.js"></script>
+</head>
+
+<body onload="listarCarrinho()">
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/menu.svg" alt="ícone de menu" onclick="openDrawer()">
+                <p>Carrinho</p>
+            </div>
+            <img src="img/search.svg" alt="ícone de busca">
+        </nav>
+    </header>
+
+    <section id="listaCarrinho"></section>
+
+    <section>
+        <div class="footer">
+            <p>Casa Container 2019 - Todos os direitos reservados</p>
+        </div>
+    </section>
+
+    <div class="drawer">
+        <div class="drawer-menu">
+            <div class="drawer-title">Casa Container</div>
+            <div class="menu-itens">
+                <div class="menu-item">
+                    <a href="index.html">
+                        <div>
+                            <img src="img/home.svg" alt="ícone para home">
+                            Home
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="carrinho.html">
+                        <div>
+                            <img src="img/cart.svg" alt="ícone para home">
+                            Carrinho
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="drawer-close" onclick="closeDrawer()"></div>
+    </div>
+</body>
+
+</html>

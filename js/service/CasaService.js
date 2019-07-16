@@ -42,7 +42,6 @@ class CasaService {
                 preco: "R$180.000",
             }
 
-
         ]
 
         let dadosJson = JSON.stringify(dados)

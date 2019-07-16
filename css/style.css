@@ -235,6 +235,28 @@ margin: 20px 10px;
   margin-right: 20px;
 }
 
+/* CARRINHO */
+.item-carrinho {
+  background-color: white;
+  border-bottom: 2px solid rgb(233,233,233);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-carrinho .imagem {
+  width: 100px;
+}
+.item-carrinho .imagem img {
+  width: 100%;
+}
+
+.item-carrinho .close img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ANIMAÇÕES */
 @keyframes abrir-menu {
   0% {
