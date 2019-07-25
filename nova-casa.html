@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nova Casa - Casa Container</title>
+    <link rel="stylesheet" href="css/reset.css" class="stylesheet">
+    <link rel="stylesheet" href="css/style.css" class="stylesheet">
+    <script src="js/service/CasaService.js"></script>
+    
+</head>
+
+<body style="opacity: 0">
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/left-arrow.svg" alt="ícone de menu" onclick="voltar()">
+                <h1 id="navbarTitle">Nova Casa</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section class="nova-casa">
+        <form>
+            <input type="text" id="imagem" placeholder="Link da imagem da casa">
+            <input type="text" id="nome" placeholder="Nome da casa">
+            <input type="text" id="descricao" placeholder="Descrição da casa">
+            <input type="text" id="preco" placeholder="Preço da casa">
+
+            <button type="button" onclick="salvar()">Salvar</button>
+            <button type="button">Cancelar</button>
+        </form>
+    </section>
+
+    <script src="js/controller/NovaCasaController.js"></script>
+</body>
+
+</html>

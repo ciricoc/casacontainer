@@ -8,4 +8,14 @@ class CarrinhoService {
             return carrinho
         }
     }
+
+    static adicionarItem(item){
+        let carrinho = CarrinhoService.carregarCarrinho()
+        carrinho.push(item)
+        CarrinhoService.setCarrinho(carrinho)
+    }
+
+    static setCarrinho(carrinho){
+        localStorage.setItem("carrinho", JSON.stringify(carrinho))
+    }
 }

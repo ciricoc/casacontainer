@@ -1,16 +1,17 @@
+let casasCadastradas = CasaService.buscarTodas()
+
 function listarCasas() {
 
-    let casasCadastradas = CasaService.buscarTodas()
+    document.querySelector('body').style.animation = "zoom-out 0.5s"
 
     for (let i = 0; i < casasCadastradas.length; i++) {
 
         const element = casasCadastradas[i];
 
         document.getElementById("catalogo").innerHTML +=
-            /*html*/
-            
+            /*html*/            
             `
-            <div class="card_container card_casa">
+            <div class="card_container card_casa" onClick="selecionarCasas(${i})">
                 <img src=${element.img} alt=${element.nome}>
                 <p>${element.nome}</p>
                 <div class="row">
@@ -21,6 +22,14 @@ function listarCasas() {
             `
     }
 
+}
+
+function selecionarCasas(i) {
+    CasaService.selecionarCasa(casasCadastradas[i])
+    document.querySelector('body').style.animation = "zoom-in 0.5s"
+    setTimeout(() => {
+        location.href = "casa.html"
+    }, 450);
 }
 
 function openDrawer() {

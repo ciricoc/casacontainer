@@ -251,11 +251,38 @@ margin: 20px 10px;
 .item-carrinho .imagem img {
   width: 100%;
 }
-
 .item-carrinho .close img {
   width: 20px;
   height: 20px;
 }
+
+/* DETALHE CASA */
+.detalhe-casa img{
+  width: 100%;
+}
+.detalhe-casa h1 {
+  font-size: 25pt;
+}
+.detalhe-casa .descricao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.detalhe-casa .dados {
+  padding: 20px;
+}
+.detalhe-casa .casa-descricao {
+  font-size: 18pt;
+}
+.detalhe-casa .casa-preco {
+  font-size: 18pt;
+  color: blue;
+}
+
+.nova-casa{
+  margin-top: 50px;
+}
+
 
 /* ANIMAÇÕES */
 @keyframes abrir-menu {

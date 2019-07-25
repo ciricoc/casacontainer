@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Casa Container - Carrinho</title>
+    <title>Carrinho - Casa Container</title>
     <link rel="stylesheet" href="css/reset.css" class="stylesheet">
     <link rel="stylesheet" href="css/style.css" class="stylesheet">
     <script src="js/service/CasaService.js"></script>
-    <script src="js/controller/IndexController.js"></script>
+    <script src="js/service/CarrinhoService.js"></script>
+    <script src="js/controller/CarrinhoController.js"></script>
 </head>
 
 <body onload="listarCarrinho()">
     <header>
         <nav class="menu">
             <div class="logo">
-                <img src="img/menu.svg" alt="ícone de menu" onclick="openDrawer()">
+                <img src="img/left-arrow.svg" alt="ícone de menu" onclick="voltar()">
                 <p>Carrinho</p>
             </div>
             <img src="img/search.svg" alt="ícone de busca">
